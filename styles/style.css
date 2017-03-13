@@ -1,0 +1,66 @@
+body{
+  border:0;
+  margin:0;
+  padding:0;
+}
+
+#container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100vw;
+  height:100vh;
+  background: rgb(50,50,50);
+  border:0;
+  margin:0;
+  padding:0;
+}
+
+#text{
+/*  background-image: url(http://tympanus.net/codrops-playground/assets/images/posts/23145/fire.gif);
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip:text;*/
+  font-size: 20vh;
+  text-align: center;
+  font-family: 'Sonsie One', cursive;
+  color: black;
+}
+
+.fireEffect{
+  animation: flames 1.5s linear infinite alternate;
+}
+
+@keyframes flames{
+  0% { text-shadow:   -.1em   .0em  .3em #b3cde0,
+                      .1em    -.1em .3em #6497b1,
+                      -.2em   -.2em .4em #005b96,
+                      .2em    -.3em .3em #03396c,
+                      -.2em   -.4em .4em #03396c,
+                      .1em    -.5em .7em #011f4b,
+                      .1em    -.7em .7em #000;}
+
+  50%  { text-shadow: .1em    -.2em   .5em #b3cde0,
+                      .15em   .0em    .4em #6497b1,
+                      -.1em   -.25em  .5em #005b96,
+                      .15em   -.45em  .5em #03396c,
+                      -.1em   -.5em   .6em #03396c,
+                      .0em    -.8em   .6em #011f4b,
+                      .2em    -1em    .8em #000;}
+
+  75%  { text-shadow: -.1em   .0em    .3em #b3cde0,
+                      .1em    -.1em   .3em #6497b1,
+                      -.2em   -.2em   .6em #005b96,
+                      .2em    -.3em   .4em #03396c,
+                      -.2em   -.4em   .7em #03396c,
+                      .1em    -.5em   .7em #011f4b,
+                      .1em    -.7em   .9em #000;}
+
+  100%   { text-shadow: -.1em   -.2em   .6em #b3cde0,
+                      -.15em  .0em    .6em #6497b1,
+                      .1em    -.25em  .6em #005b96,
+                      -.15em  -.45em  .5em #03396c,
+                      .1em    -.5em   .6em #03396c,
+                      .0em    -.8em   .6em #011f4b,
+                      -.2em   -1em    .8em #000;}  
+}
